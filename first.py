@@ -11,6 +11,7 @@ payload = {'limit': '10', 'sort_dir': 'desc', 'sort': 'volume_24h'}
 
 r = requests.get('https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest', headers=headers, params=payload)
 
-r.json()
+all_data = r.json()
 
-print (r.json())
+
+print(all_data)
